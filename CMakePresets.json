@@ -14,7 +14,10 @@
 		},
 		{
 			"name": "build-linux",
-			"inherits": "default"
+			"inherits": "default",
+			"cacheVariables": {
+				"CMAKE_CXX_CLANG_TIDY": "clang-tidy"
+			}
 		},
 		{
 			"name": "build-windows",

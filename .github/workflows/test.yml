@@ -44,6 +44,4 @@ jobs:
       - uses: lukka/run-cmake@v10
         with:
           workflowPreset: ${{ matrix.platform.workflow }}
-        env:
-          CMAKE_CXX_CLANG_TIDY: clang-tidy
 
