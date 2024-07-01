@@ -39,6 +39,7 @@ jobs:
         if: startsWith(matrix.platform.os, 'ubuntu')
         run: |
           sudo apt-get install -y libxtst-dev clang-tidy
+          clang-tidy --version
 
 
       - uses: lukka/run-cmake@v10
